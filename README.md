@@ -1,4 +1,4 @@
-# 100daysReplit
-100 days of code
+# 100daysofReplit
+100 Days of Code - The Complete Python Course
 
 This is where I store my code for 100 days of code via Replit learning.
