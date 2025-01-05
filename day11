@@ -1,0 +1,9 @@
+print("How many seconds are in a year?")
+print()
+  
+year = int(input("enter the year: "))
+  
+if year % 4 == 0:
+  print("There are", 60*60*24*366, "seconds in", year)
+else:
+  print("There are", 60*60*24*365, "seconds in", year)
