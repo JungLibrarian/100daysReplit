@@ -1,0 +1,16 @@
+# spill the bill
+  
+myBill = float(input("What was the bill?: "))
+
+# user input is single digit 5, 10, 15 etc
+tipRate = float(input("What % of tip will you leave?: "))
+
+numberOfPeople = int(input("How many people?: "))
+
+tipAmount = myBill * (tipRate / 100)
+totalBill = myBill + tipAmount
+
+eachPersonBill = round((totalBill / numberOfPeople), 2)
+print("The tipping amount is: ", tipAmount)
+print("The total bill is: ", totalBill)
+print("You each owe", eachPersonBill)
