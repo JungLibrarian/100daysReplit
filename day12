@@ -1,0 +1,24 @@
+print("100 Days of Code QUIZ")
+print()
+#quote was missing
+print("How many can you answer correctly?")
+
+#input was missing
+ans1 = input("What language are we writing in? ")
+if ans1 == "python":
+  print("Correct")
+else:
+  #quote was missing
+  print("Nope🙈")
+
+#int was missing
+ans2 = int(input("Which lesson number is this? "))
+if(ans2 > 12):
+  #indentation
+  print("We're not quite that far yet")
+#moved up elif
+elif(ans2 == 12):
+  print("That's right!")
+
+else:
+  print("We've gone well past that!")
