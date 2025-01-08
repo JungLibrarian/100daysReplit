@@ -18,3 +18,4 @@ elif score >= 40:
   print("You got", score, "which is a U")
 else:
   print("Did you put the right score?")
+
