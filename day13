@@ -1,0 +1,20 @@
+print("Exam Grade Calculator")
+print()
+print("Name of exam: Computer Science")
+print()
+print("Max. Possible Score: 100")
+score = int(input("Your score: "))
+if score >= 90:
+  print("You got", score, "which is a A+")
+elif score >= 80:
+  print("You got", score, "which is a A-")
+elif score >= 70:
+  print("You got", score, "which is a B")
+elif score >= 60:
+  print("You got", score, "which is a C")
+elif score >= 50:
+  print("You got", score, "which is a D")
+elif score >= 40:
+  print("You got", score, "which is a U")
+else:
+  print("Did you put the right score?")
