@@ -1,0 +1,53 @@
+#rock paper sissor
+from getpass import getpass as input
+print("Select your move (R, P or S)")
+print()
+
+player1win = 0
+player2win = 0
+
+while True:
+  print()
+  player1 = input("Player 1 > ")
+  player2 = input("Player 2 > ")
+
+  if player1 == "R" or player1 == "r":
+    if player2 == "R" or player2 == "r":
+      print("It's a draw!")
+    if player2 == "P" or player2 == "p":
+      print("Player 2 wins!")
+      player2win += 1
+    if player2 == "S" or player2 == "s":
+      print("Player 1 wins!")
+      player1win += 1
+
+  elif player1 == "P" or player1 == "p":
+    if player2 == "R" or player2 == "r":
+      print("Player 1 wins!" )
+      player1win += 1
+    if player2 == "P" or player2 == "p":
+      print("It's a draw!")
+    if player2 == "S" or player2 == "s":
+      print("Player 2 wins!")
+      player2win += 1
+    
+  elif player1 == "S" or player1 == "s":
+    if player2 == "R" or player2 == "r":
+      print("Player 2 wins!")
+      player2win += 1
+    if player2 == "P" or player2 == "p":
+      print("Player 1 wins!")
+      player1win += 1
+    if player2 == "S" or player2 == "s":
+      print("It's a draw!")
+  else:
+    print("Invalid move")
+
+  if player1win == 3 or player2win == 3:
+    break
+  else:
+    continue
+print("player 1 won", player1win, "times, and player 2 won", player2win, "times")
+exit()
+
+
